@@ -37,7 +37,7 @@ export default {
         }
         },
     mounted() {
-        axios.get("http://89.252.140.57:8080/category/?pageNumber=0&pageSize=38", this.config)
+        axios.get("/category/?pageNumber=0&pageSize=38", this.config)
             .then(data => (this.info = data.data.data))
             .catch(err => console.log(err))
     }
